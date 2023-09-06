@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "mat-phone-code-validator": {
+      "projectType": "library",
+      "root": "projects/mat-phone-code-validator",
+      "sourceRoot": "projects/mat-phone-code-validator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mat-phone-code-validator/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mat-phone-code-validator/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mat-phone-code-validator/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mat-phone-code-validator/src/test.ts",
+            "tsConfig": "projects/mat-phone-code-validator/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-phone-code-validator/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
