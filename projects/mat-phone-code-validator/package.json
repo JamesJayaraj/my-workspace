@@ -1,6 +1,6 @@
 {
-  "name": "mat-phone-code-validator",
-  "version": "0.0.1",
+  "name": "@jamesjayaraj/mat-phone-code-validator",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0"
